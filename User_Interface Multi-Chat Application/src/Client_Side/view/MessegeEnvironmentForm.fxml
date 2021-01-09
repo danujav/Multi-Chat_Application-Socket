@@ -45,9 +45,9 @@
          </font></TextArea>
       <AnchorPane layoutX="4.0" layoutY="533.0" prefHeight="41.0" prefWidth="285.0" style="-fx-background-color: #34495e; -fx-background-radius: 30;">
          <children>
-            <TextField layoutX="4.0" layoutY="3.0" prefHeight="35.0" prefWidth="278.0" style="-fx-background-radius: 30;">
+            <TextField layoutX="4.0" layoutY="3.0" prefHeight="35.0" prefWidth="278.0" promptText="Type a messege" style="-fx-background-radius: 30;">
                <font>
-                  <Font name="Ubuntu Bold" size="18.0" />
+                  <Font name="Ubuntu" size="16.0" />
                </font></TextField>
             <ImageView fitHeight="19.0" fitWidth="29.0" layoutX="251.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                <image>
