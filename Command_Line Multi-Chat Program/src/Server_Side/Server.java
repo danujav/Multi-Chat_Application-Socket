@@ -12,7 +12,7 @@ public class Server {
 
     public static void main(String[] args) {
 
-        //list to add all the client Thread
+        //add all the clients Threads to list
         ArrayList <ServerThread> threadArrayList = new ArrayList<>();
 
         try(ServerSocket serverSocket = new ServerSocket(5000)){
