@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="330.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client_Side.controller.ClientLoginFormController">
+   <children>
+      <AnchorPane prefHeight="56.0" prefWidth="330.0" style="-fx-background-color: #34495e;">
+         <children>
+            <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="31.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/icons8-chat-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="14.0" layoutX="11.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/back.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="73.0" layoutY="17.0" text="Danuja" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="29.0" layoutX="224.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/video.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
