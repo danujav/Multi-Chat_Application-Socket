@@ -11,8 +11,6 @@ public class ServerThread extends Thread{
     private ArrayList<ServerThread> threadArrayList;
     private PrintWriter output;
 
-    public ServerThread(){}
-
     public ServerThread(Socket socket, ArrayList<ServerThread> threads){
         this.socket = socket;
         this.threadArrayList = threads;

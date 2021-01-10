@@ -18,20 +18,14 @@ public class ClientLoginFormController {
 
     public static ArrayList<String> users = new ArrayList<>();
 
-
     public void continueBtnOnAction(ActionEvent actionEvent) throws IOException {
-       /* if(txtName.getText() != null){
-         //   lblContactName.setText(txtName.getText());
-            System.out.println(txtName.getText());
-            this.mainRoot.getChildren().clear();
-            this.mainRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("../view/MessegeEnvironmentForm.fxml")));
-        }*/
         userName = txtName.getText().trim();
         boolean flag = false;
         if(users.isEmpty()){
             users.add(userName);
             flag = true;
         }
+
 
         for(String s : users){
             if (!s.equalsIgnoreCase(userName)) {
@@ -42,15 +36,11 @@ public class ClientLoginFormController {
         }
 
         if(flag){
-         /*     if(txtName.getText() != null){
-         //   lblContactName.setText(txtName.getText());
-            System.out.println(txtName.getText());
-                  this.mainRoot.getChildren().clear();
-                  this.mainRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("../view/MessegeEnvironmentForm.fxml")));*/
-
             this.mainRoot.getChildren().clear();
-            this.mainRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("../view/MessegeEnvironmentForm.fxml")));
+            this.mainRoot.getChildren().add(FXMLLoader.load(this.getClass().
+                    getResource("../view/MessegeEnvironmentForm.fxml")));
         }
+
 
     }
 }

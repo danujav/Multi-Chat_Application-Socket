@@ -1,5 +1,6 @@
 package Client_Side.controller;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.geometry.NodeOrientation;
 import javafx.scene.control.Label;
@@ -20,6 +21,9 @@ public class MessageEnvironmentFormController extends Thread{
     public BufferedReader reader;
     public PrintWriter writer;
     public Socket socket;
+    public Label lbl;
+    public JFXTextField txtName;
+
 
     public void initialize(){
         try{
@@ -38,7 +42,7 @@ public class MessageEnvironmentFormController extends Thread{
         String msg = txtMessage.getText().trim();
         writer.println(ClientLoginFormController.userName + ": "+ msg);
         txtArea.setNodeOrientation(NodeOrientation.LEFT_TO_RIGHT);
-        txtArea.appendText("Me: " + msg + "\n\n");
+      //  txtArea.appendText("Me: " + msg + "\n\n");
         txtMessage.setText("");
         if(msg.equalsIgnoreCase("Bye") || (msg.equalsIgnoreCase("logout"))){
             System.exit(0);

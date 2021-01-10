@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -22,11 +22,6 @@
                   <Image url="@../asserts/back.png" />
                </image>
             </ImageView>
-            <Label fx:id="lblContactName" layoutX="73.0" layoutY="14.0" text="Danuja" textFill="WHITE">
-               <font>
-                  <Font name="Ubuntu Bold" size="17.0" />
-               </font>
-            </Label>
             <ImageView fitHeight="20.0" fitWidth="29.0" layoutX="238.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../asserts/video.png" />
@@ -37,6 +32,7 @@
                   <Image url="@../asserts/call.png" />
                </image>
             </ImageView>
+            <JFXTextField fx:id="txtName" focusColor="WHITE" layoutX="60.0" layoutY="13.0" prefHeight="26.0" prefWidth="99.0" text="da" />
          </children>
       </AnchorPane>
       <TextArea fx:id="txtArea" layoutY="50.0" prefHeight="473.0" prefWidth="330.0">
