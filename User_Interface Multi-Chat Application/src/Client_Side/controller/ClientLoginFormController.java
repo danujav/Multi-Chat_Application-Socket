@@ -41,6 +41,8 @@ public class ClientLoginFormController {
                     getResource("../view/MessegeEnvironmentForm.fxml")));
         }
 
+      //System.out.println("Client Login "+ userName);
+      //  MessageEnvironmentFormController.setLblContactName(userName);
 
     }
 }

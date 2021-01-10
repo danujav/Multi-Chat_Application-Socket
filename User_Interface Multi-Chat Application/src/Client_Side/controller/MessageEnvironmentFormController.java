@@ -21,11 +21,10 @@ public class MessageEnvironmentFormController extends Thread{
     public BufferedReader reader;
     public PrintWriter writer;
     public Socket socket;
-    public Label lbl;
-    public JFXTextField txtName;
-
 
     public void initialize(){
+        System.out.println("Initialized method" + ClientLoginFormController.userName);
+        lblContactName.setText(ClientLoginFormController.userName);
         try{
             socket = new Socket("localhost", 5000);
             System.out.println("Socket is connecting with server");
@@ -42,7 +41,6 @@ public class MessageEnvironmentFormController extends Thread{
         String msg = txtMessage.getText().trim();
         writer.println(ClientLoginFormController.userName + ": "+ msg);
         txtArea.setNodeOrientation(NodeOrientation.LEFT_TO_RIGHT);
-      //  txtArea.appendText("Me: " + msg + "\n\n");
         txtMessage.setText("");
         if(msg.equalsIgnoreCase("Bye") || (msg.equalsIgnoreCase("logout"))){
             System.exit(0);
